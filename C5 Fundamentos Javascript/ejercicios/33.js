@@ -17,6 +17,7 @@ while (var i % var i === 1 && var iSegunda % 1 === var i){
 }
 
 
+
 // if (numero % numero === 1){
 //   return true;
 // } else if (numero % 1 === numero) {
