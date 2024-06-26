@@ -4,7 +4,9 @@ function doWhile(num) {
   // PISTA: Utiliza el bucle do-while.
   // Tu código:
 
-while (num * 5 <= 8)
+while (var i = num; i <= 8; i++)
+if (i * 5 <=)
+
 
 }
 

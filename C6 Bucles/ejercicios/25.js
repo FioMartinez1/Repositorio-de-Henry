@@ -6,16 +6,29 @@ function esPalindromo(string) {
    // que se lee igual hacia adelante que hacia atrás.
    // Tu código:
 
-var palabra = string.replace(/ /g, "").toLowerCase();
+// var palabra = string.replace(/ /g, "").toLowerCase();
 
-var j = palabra.length -1;
+// var j = palabra.length -1;
 
-for (var i = 0; i < palabra.length; i++) {
-   if(palabra[i] !== palabra[j]) return false;
-   j--;   
-}
+// for (var i = 0; i < palabra.length; i++) {
+//    if(palabra[i] !== palabra[j]) return false;
+//    j--;   
+// }
 
-return true;
+// return true;
+
+var palindromo = string.split(" ") 
+
+var palindromoInvertido = palindromo.reverse ()
+
+for (var i = 0; i < string.length - 1; i++)
+if (palindromoInvertido [i] === palindro [1]) return true;
+else return false;
+
+
+
+
+
 
 }
 

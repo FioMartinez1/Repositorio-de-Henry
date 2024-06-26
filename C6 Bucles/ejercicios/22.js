@@ -7,22 +7,17 @@ function combine(str1, str2, str3) {
    // combine("abc", "12345", "") == "a1b2c345"
    // combine("abc", "12345", "67") == "a16b27c345"
 
-var resultado = '';
+var finDelBucle = Math.max (str1.length, str2.length, str3.length)
 
-var maxLength = Math.max (str1, str2, str3);
+var acumulador = ""
 
-for (var i = 0; i < maxLength; i++){
-   if (i < str1.length){
-      resultado += str1[i];
-   } 
-   if (i < str2.length){
-      resultado +=str2 [i]
-   }
-   if (i < str3.length){
-      resultado += str3 [i]
-   }  
-}
-return resultado;
+for (var i = 0; i < finDelBucle; i++){
+if (str1[i] !== undefined) acumulador = acumulador + str1 [i]
+if (str2[i] !== undefined) acumulador = acumulador + str2 [i]
+if (str3[i] !== undefined) acumulador = acumulador + str3 [i]
+
+} 
+return acumulador
 
    
 }
